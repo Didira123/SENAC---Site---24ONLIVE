@@ -31,13 +31,16 @@ a{
 }
 .logo{
     /* display: inline-block; */
-    flex-basis: 5;
+    /* flex-basis: 5; */
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .logo-imagem{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     padding: 5px;
     box-sizing: border-box;
 }
@@ -54,7 +57,7 @@ a{
 .pesquisa div{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 0 3%;
 }
 .pesquisa input{
@@ -133,6 +136,13 @@ a{
     /* margin: 0px !important; */
     /* flex-grow: 3; */
     display: flex;
+}
+.modal-login{
+    display: flex;
+    justify-content: center;
+}
+.modal-login-corpo{
+    width:430px;
 }
 .tituloForm{
     text-align: center;
