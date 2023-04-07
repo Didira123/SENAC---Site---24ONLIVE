@@ -1,7 +1,6 @@
 // window.onbeforeunload = function () {
 //     window.scrollTo(0, 0);
 // }
-window.scrollTo(0, 0);
 // function scrollToFirstText(formulario){
 //     var valor_busca = formulario.querySelector('input').value;
 //     alert(valor_busca);
@@ -25,3 +24,16 @@ window.scrollTo(0, 0);
 //         }
 //     }
 // }
+
+window.scrollTo(0, 0);
+function getOne(objeto){
+    // alert("AAAAAAA");
+    return document.querySelector(objeto);
+}
+function getMany(objeto){
+    return document.querySelectorAll(objeto);
+}
+
+getOne(".carrinho").addEventListener('click', function(){
+    getOne(".carrinho_invisivel").classList.add("carrinho_move");
+})

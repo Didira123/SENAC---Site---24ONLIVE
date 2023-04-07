@@ -91,6 +91,9 @@ a{
     align-items: center;
     margin:0 10px;
 }
+.listMenu li > img, .listMenu li > a {
+    width: 80px !important;
+}
 .menu .favoritos .login-icon .carrinho{
     cursor: pointer;
 }
@@ -188,8 +191,26 @@ a{
 .carrinho{
     margin-right: 0;
 }
-.listMenu li > img, .listMenu li > a {
-    width: 80px !important;
+.carrinho_invisivel{
+    /* display:none; */
+    right:-20%;
+    width: 20%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    background-color: #E2E2E2;
+    top: 0;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+.carrinho_move {
+    right: 0% !important;
+    display: flex !important;
+    transition: 0.5s all;
 }
 .principal, footer, .navegacao, .produtos{
     margin:0 30px;
