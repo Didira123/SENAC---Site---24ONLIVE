@@ -146,6 +146,7 @@ a{
 }
 .modal-login-corpo{
     width:430px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .tituloForm{
     text-align: center;
@@ -188,6 +189,42 @@ a{
 .textoLogin p{
     margin:0;
 }
+
+.formularioLogin {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .formularioLogin .modal-body label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .formularioLogin .modal-body input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .formularioLogin .modal-footer{
+    justify-content: space-evenly;
+  }
+  .formularioLogin .modal-footer button {
+    display: block;
+    /* width: 100%; */
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
 .carrinho{
     margin-right: 0;
 }
