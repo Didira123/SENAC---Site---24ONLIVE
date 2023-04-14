@@ -16,12 +16,15 @@
   <header class="cabecalho">
     <nav class="navegacao">
       <div class="logo-barraNav">
-        <a href="index.html"><figure class="logo"><img src="../source/Home Page/Logo - Home.png" class="logo-imagem"
-            alt="Logo da Farma-OnLive"></figure></a>
+        <a href="index.html">
+          <figure class="logo"><img src="../source/Home Page/Logo - Home.png" class="logo-imagem"
+              alt="Logo da Farma-OnLive"></figure>
+        </a>
         <form class="form-inline my-2 my-lg-0 pesquisa">
           <div class="w-100">
             <input class="form-control mr-sm-2 col-10" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button> <!--onclick="scrollToFirstText(document.querySelector('.pesquisa'))"-->
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            <!--onclick="scrollToFirstText(document.querySelector('.pesquisa'))"-->
           </div>
         </form>
       </div>
@@ -37,7 +40,7 @@
             <p>Cadastre-se</p>
           </div>
         </li>
-        <li class="itensListMenu carrinho"><a><img src="../source/Home Page/Carrinho - Home.png"
+        <li class="itensListMenu carrinho_button"><a><img src="../source/Home Page/Carrinho - Home.png"
               alt="icone de carrinho de compras"></a></li>
       </ul>
       <div class="menu dropleft">
@@ -237,8 +240,8 @@
           </form> -->
           <label>E-mail:<input type="email" id="email" name="email" required></label>
           <label>Senha:<input type="password" id="password" name="password" required></label>
-        
-            <!-- <button type="submit">Entrar</button> -->
+
+          <!-- <button type="submit">Entrar</button> -->
         </div>
         <div class="modal-footer">
           <p>Não tem uma conta? <a href="#cadastreSe.html">Cadastre-se</a></p>
@@ -248,13 +251,36 @@
       </form>
     </div>
   </div>
-  <div class="move-screen-carrinho"></div>
   <div class="volta-topo"><a href="#topo"><img class="w-100" src="../source/footer/Volta topo.png"></a></div>
   <div class="chat"><img class="w-100" src="../source/footer/chat - Home.png"></div>
   <div class="carrinho_invisivel">
-    <div class="topo_carrinho">A</div>
-    <div class="body-carrinho">B</div>
-    <div class="footer-carrinho">C</div>
+    <div class="flex-centro-centro topo_carrinho col-1">
+      <p>Carrinho de Compras</p>
+    </div>
+    <ul class="col-9 body_carrinho">
+        <li>
+          <div class="caixaImagemProduto"><img src="../source/Home Page/favoritos - Home.png" alt="..."></div>
+          <div class="infoProduto">
+            <div class="descricaoProduto">
+              <p>Produto muito pika na promoção de fim de ano!!</p>
+            </div>
+            <div class="definirQuantia">
+              <p>Quantia:</p>
+              <div class="menosUm"><img src="../source/menos.png" alt="..."></div>
+              <div class="quantiaProduto">
+                <p>1</p>
+              </div>
+              <div class="maisUm"><img src="../source/mais.png" alt="..."></div>
+            </div>
+            <div class="precoProduto">
+              <p>Preço/Unidade: R$<span>130,00</span></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    <div class="flex-centro-centro footer_carrinho col-2">
+      <div>A</div>
+    </div>
   </div>
 
 
@@ -269,4 +295,5 @@
     crossorigin="anonymous"></script>
   <script src="../js/script.js"></script>
 </body>
+
 </html>

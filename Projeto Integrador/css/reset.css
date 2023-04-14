@@ -71,3 +71,6 @@ figure{
 	min-height: 0 !important;
 	max-height: 100% !important;
 }
+p{
+	margin:0 !important;
+}
