@@ -283,7 +283,6 @@ a{
     margin-right: 5%;
 }
 .flexRow-center{
-    color: white;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -300,8 +299,13 @@ a{
     padding: 15px;
     box-shadow: 0px 0px 10px 5px #d5d4d3cf;
 }
+.font{
+    color: white;
+    font-size: 25px;
+}
 .frete{
     background-color: rgb(16, 183, 212);
+
 }
 .compra{
     background-color: rgb(19, 207, 44);
@@ -496,10 +500,13 @@ footer > .row > div {
         font-size: 20px;
     }
 
+
 }
-/* @media screen and (max-width:1450px) {
-    
-} */
+@media screen and (max-width:900px) {
+    .flexColumn-center{
+        
+    }
+}
 @media screen and (max-width:1450px) {
     .textoLogin p{
         font-size: 12px;
