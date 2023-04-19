@@ -1,0 +1,62 @@
+.body-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 40%;
+    padding: 40px 25px 40px 25px;
+}
+
+.formulariocadastre {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulariocadastre-div {
+    display: flex;
+}
+
+.formulariocadastre-label {
+    width: 40%;
+}
+
+.formulariocadastre-label .texto-form {
+    display: flex;
+    justify-content: end;
+    margin-right: 5px;
+}
+
+.formulariocadastrecadastre .inserir-form {
+    height: 10%;
+}
+
+.container-botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.cadastro-botao {
+    width: 50%;
+    height: 40px;
+    border-radius: 20px;
+    transition: 0.3s;
+    background-color: red;
+}
+
+.cadastro-botao:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+    background-color: green;
+}
