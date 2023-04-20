@@ -397,7 +397,11 @@ a{
     border: 1px solid black;
     border-radius: 7px;
 }
-
+.menosUm img:hover, .maisUm img:hover {
+    cursor: pointer;
+    background-color: rgb(255, 153, 153);
+    border-width: 2px;
+}
 
 
 /*////////////////*/
