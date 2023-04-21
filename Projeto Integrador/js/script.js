@@ -22,3 +22,13 @@ function menosUm(event){
     let valor = event.target.parentNode.parentNode.querySelector(".quantiaProduto > p");
     valor.textContent = parseInt(valor.textContent) - 1;
 }
+let varExibirFavoritos = 0;
+function exibirFavoritos(event){
+    if (varExibirFavoritos === 0){
+        $(".favoritados").classList.remove("favoritadosInvisiveis");
+        varExibirFavoritos = 1;
+        return;
+    }
+    $(".favoritados").classList.add("favoritadosInvisiveis");
+    varExibirFavoritos = 0;
+}
