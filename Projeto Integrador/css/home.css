@@ -181,7 +181,8 @@ a {
     max-height: none !important;
     background-color: aliceblue;
 }
-.favoritadosInvisiveis{
+
+.favoritadosInvisiveis {
     display: none;
 }
 
@@ -214,12 +215,10 @@ a {
     color: white;
     font-weight: bold;
 }
-.favoritadoDescricao{
 
-}
-.favoritadoPreco{
+.favoritadoDescricao {}
 
-}
+.favoritadoPreco {}
 
 .login {
     /* margin: 0px !important; */
@@ -807,6 +806,82 @@ footer>.row>div {
     position: fixed;
     right: 0;
     bottom: 0;
+    cursor:pointer;
+}
+
+.chatbot {
+    width: 300px;
+    height: 50%;
+    position: fixed;
+    bottom: -50%;
+    right: 0;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s all;
+}
+
+.chatbotAparece{
+    bottom: 0;
+    transition: 0.5s all;
+}
+
+.chatbot_topo {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    padding: 0;
+}
+
+.chatbot_topo figure, .chatbot_footer figure {
+    width: 35px;
+    height: 35px;
+}
+
+.chatbot_footer figure {
+    cursor: pointer;
+}
+
+.chatbot_topo > img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    align-self: flex-start;
+}
+
+.chatbot_body {
+    background-color: #d6e316;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.chatbot_body li{
+    background-color: white;
+    border: 1px solid black;
+    margin: 3px 0 0 0;
+    width: 80%;
+}
+
+.chatbot_footer {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    align-items: center;
+    background-color: blue;
+}
+
+li.mensagemBot {}
+
+li.mensagemUsuario {
+    left: 20%;
+    position: relative;
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */

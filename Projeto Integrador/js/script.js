@@ -32,3 +32,14 @@ function exibirFavoritos(event){
     $(".favoritados").classList.add("favoritadosInvisiveis");
     varExibirFavoritos = 0;
 }
+let chat = 0;
+function toogleChatBot(event){
+    if (chat == 0){
+        $(".chatbot").classList.add("chatbotAparece");
+        chat = 1;
+        return;
+    }
+    $(".chatbot").classList.remove("chatbotAparece");
+    chat = 0;
+}
+

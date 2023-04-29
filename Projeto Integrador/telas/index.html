@@ -30,7 +30,8 @@
       </div>
       <ul class="listMenu">
         <li class="itensListMenu favoritos">
-          <a onclick="exibirFavoritos(event)"><img src="../source/Home Page/favoritos - Home.png" alt="coração dos favoritos"></a>
+          <a onclick="exibirFavoritos(event)"><img src="../source/Home Page/favoritos - Home.png"
+              alt="coração dos favoritos"></a>
           <ul class="favoritados favoritadosInvisiveis">
             <li class="favoritados_itens">
               <div class="favoritados_itens_imagem">
@@ -40,7 +41,8 @@
                 <p class="favoritadoDescricao">Novalgina Inf 500mg</p>
                 <p class="favoritadoPreco">R$: 30,85</p>
               </div>
-            </li><li class="favoritados_itens">
+            </li>
+            <li class="favoritados_itens">
               <div class="favoritados_itens_imagem">
                 <img src="../source/Home Page/favoritos - Home.png">
               </div>
@@ -303,7 +305,7 @@
     </div>
   </div>
   <div class="volta-topo"><a href="#topo"><img class="w-100" src="../source/footer/Volta topo.png"></a></div>
-  <div class="chat"><img class="w-100" src="../source/footer/chat - Home.png"></div>
+  <div class="chat" onclick="toogleChatBot(event)"><img class="w-100" src="../source/footer/chat - Home.png"></div>
   <div class="carrinho_invisivel">
     <div class="flex-centro-centro topo_carrinho col-1">
       <p>Carrinho de Compras</p>
@@ -443,6 +445,23 @@
     </div>
   </div>
 
+  <div class="chatbot">
+    <div class="chatbot_topo col-1">
+      <figure><img src="../source/bot-chatbot.webp" alt="..."></figure>
+      <div>ChatBot - Compras e Dúvidas</div>
+      <img onclick="toogleChatBot(event)" src="../source/fechar-X.png" alt="">
+    </div>
+    <ul class="chatbot_body col-9">
+      <li class="mensagemBot">Olá boa tarde.</li>
+      <li class="mensagemUsuario">Gostaria de compra o pedido 314.</li>
+      <li class="mensagemBot">redirecionando para tela de venda</li>
+      <li class="mensagemUsuario">Beleza. Obrigado!</li>
+    </ul>
+    <div class="chatbot_footer col-1">
+      <div><input></div>
+      <figure><img src="../source/envioMensagem.png" alt="..."></figure>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
